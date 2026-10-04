@@ -1,4 +1,4 @@
-package herokuapp.automation.framework.utilities;
+package com.kaya.herokuapp.utilities;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

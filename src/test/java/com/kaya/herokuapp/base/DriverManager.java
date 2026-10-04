@@ -1,6 +1,6 @@
-package herokuapp.automation.framework.base;
+package com.kaya.herokuapp.base;
 
-import herokuapp.automation.framework.utilities.ConfigReader;
+import com.kaya.herokuapp.utilities.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
