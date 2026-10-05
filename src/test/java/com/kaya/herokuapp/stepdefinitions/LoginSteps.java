@@ -1,40 +1,42 @@
 package com.kaya.herokuapp.stepdefinitions;
 
+import com.kaya.herokuapp.pages.LoginPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.testng.Assert;
 
 public class LoginSteps {
+
+    private LoginPage loginPage;
+
     @Given("kullanıcı login sayfasındadır")
-    public void kullanıcıLoginSayfasındadır() {
-    }
-
-    @When("kullanıcı {string} ve {string} bilgilerle giriş yapar")
-    public void kullanıcıVeBilgilerleGirişYapar(String arg0, String arg1) {
-    }
-
-    @Then("{string} mesajı görüntülenir")
-    public void mesajıGörüntülenir(String arg0) {
-    }
-
-    @And("secure area sayfası açılır")
-    public void secureAreaSayfasıAçılır() {
+    public void kullaniciLoginSayfasindadir() {
+        loginPage = new LoginPage();
+        loginPage.goToLoginPage();
     }
 
     @When("kullanıcı {string} ve {string} ile giriş yapar")
-    public void kullanıcıVeIleGirişYapar(String arg0, String arg1) {
+    public void kullaniciIleGirisYapar(String username, String password) {
+        loginPage.login(username, password);
     }
 
-    @When("kullanıcı {string} ve {string} ile giirş yapar")
-    public void kullanıcıVeIleGiirşYapar(String arg0, String arg1) {
+    @When("kullanıcı çıkış yapar")
+    public void kullaniciCikisYapar() {
+        loginPage.clickLogout();
     }
 
-    @And("kullanıcı çıkış yapar")
-    public void kullanıcıÇıkışYapar() {
+    @Then("{string} mesajı görüntülenir")
+    public void mesajiGoruntulenir(String beklenenMesaj) {
+        String gercekMesaj = loginPage.getFlashMessage();
+        Assert.assertTrue(gercekMesaj.contains(beklenenMesaj),
+                "Beklenen mesaj bulunamadı. Beklenen: '" + beklenenMesaj + "', Gerçek: '" + gercekMesaj + "'");
     }
 
-    @Then("{string} esajı görüntülenir")
-    public void esajıGörüntülenir(String arg0) {
+    @And("secure area sayfası açılır")
+    public void secureAreaSayfasiAcilir() {
+        Assert.assertTrue(loginPage.isSecureAreaDisplayed(),
+                "Secure Area başlığı görüntülenemedi.");
     }
 }
