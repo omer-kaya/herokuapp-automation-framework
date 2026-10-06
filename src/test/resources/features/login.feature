@@ -5,7 +5,7 @@ Feature: The Internet - Login
 
   @smoke
   Scenario: Doğru bilgilerle giriş başarılı
-    When kullanıcı "tomsmith" ve "SuperSecretPassword!" bilgilerle giriş yapar
+    When kullanıcı "tomsmith" ve "SuperSecretPassword!" ile giriş yapar
     Then "You logged into a secure area!" mesajı görüntülenir
     And secure area sayfası açılır
 
@@ -14,11 +14,11 @@ Feature: The Internet - Login
     Then "<beklenenMesaj>" mesajı görüntülenir
 
     Examples:
-      | kullanici     | sifre                | beklenenMesaj             |
-      | yanlisKulanci | SuperSecretPassword! | Your username is invalid! |
-      | tomsmith      | yanlisSifre          | Your password is invalid! |
+      | kullanici     | sifre                 | beklenenMesaj              |
+      | yanlisKulanci | SuperSecretPassword!  | Your username is invalid!  |
+      | tomsmith      | yanlisSifre            | Your password is invalid!  |
 
   Scenario: Başarılı giriş sonrası çıkış yapılabilir
-    When kullanıcı "tomsmith" ve "SuperSecretPassword!" ile giirş yapar
+    When kullanıcı "tomsmith" ve "SuperSecretPassword!" ile giriş yapar
     And kullanıcı çıkış yapar
-    Then "You logged out of the secure area!" esajı görüntülenir
+    Then "You logged out of the secure area!" mesajı görüntülenir

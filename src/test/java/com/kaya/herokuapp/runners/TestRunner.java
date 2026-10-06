@@ -5,7 +5,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = "src/test/features",
+        features = "src/test/resources/features",
         glue = {
                 "com.kaya.herokuapp.stepdefinitions",
                 "com.kaya.herokuapp.hooks"
