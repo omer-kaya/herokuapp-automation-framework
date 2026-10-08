@@ -1,30 +1,72 @@
-2026-10-06 13:38:37 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo başlıyor: Doğru bilgilerle giriş başarılı =====
-2026-10-06 13:38:37 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başlatılıyor... (headless: false)
-2026-10-06 13:38:40 INFO  com.kaya.herokuapp.utilities.ConfigReader - config.properties dosyası classpath üzerinden okunuyor...
-2026-10-06 13:38:40 INFO  com.kaya.herokuapp.utilities.ConfigReader - config.properties yüklendi. Tarayıcı: chrome | baseUrl: https://the-internet.herokuapp.com
-2026-10-06 13:38:40 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başarıyla başlatıldı.
-2026-10-06 13:39:11 INFO  com.kaya.herokuapp.pages.LoginPage - Login sayfasına gidildi.
-2026-10-06 13:39:11 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo bitti: Doğru bilgilerle giriş başarılı | Durum: UNDEFINED =====
-2026-10-06 13:39:13 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver kapatıldı.
-2026-10-06 13:39:13 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo başlıyor: Hatalı bilgilerle giriş başarısız =====
-2026-10-06 13:39:13 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başlatılıyor... (headless: false)
-2026-10-06 13:39:14 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başarıyla başlatıldı.
-2026-10-06 13:39:45 INFO  com.kaya.herokuapp.pages.LoginPage - Login sayfasına gidildi.
-2026-10-06 13:39:46 INFO  com.kaya.herokuapp.pages.LoginPage - Flash mesajı okundu: Your username is invalid!
+2026-10-07 18:56:30 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo başlıyor: Sayfada iki checkbox bulunur =====
+2026-10-07 18:56:30 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başlatılıyor... (headless: false)
+2026-10-07 18:56:34 INFO  com.kaya.herokuapp.utilities.ConfigReader - config.properties dosyası classpath üzerinden okunuyor...
+2026-10-07 18:56:34 INFO  com.kaya.herokuapp.utilities.ConfigReader - config.properties yüklendi. Tarayıcı: chrome | baseUrl: https://the-internet.herokuapp.com
+2026-10-07 18:56:34 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başarıyla başlatıldı.
+2026-10-07 18:56:36 INFO  com.kaya.herokuapp.pages.CheckboxesPage - Checkboxes sayfasına gidildi.
+2026-10-07 18:56:36 INFO  com.kaya.herokuapp.pages.CheckboxesPage - Sayfada toplam 2 checkbox bulundu.
+2026-10-07 18:56:36 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo bitti: Sayfada iki checkbox bulunur | Durum: PASSED =====
+2026-10-07 18:56:36 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver kapatıldı.
+2026-10-07 18:56:36 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo başlıyor: İlk checkbox başlangıçta işaretsizdir =====
+2026-10-07 18:56:36 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başlatılıyor... (headless: false)
+2026-10-07 18:56:38 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başarıyla başlatıldı.
+2026-10-07 18:57:08 INFO  com.kaya.herokuapp.pages.CheckboxesPage - Checkboxes sayfasına gidildi.
+2026-10-07 18:57:09 INFO  com.kaya.herokuapp.pages.CheckboxesPage - 0. index'teki checkbox durumu: işaretsiz
+2026-10-07 18:57:09 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo bitti: İlk checkbox başlangıçta işaretsizdir | Durum: PASSED =====
+2026-10-07 18:57:13 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver kapatıldı.
+2026-10-07 18:57:13 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo başlıyor: İkinci checkbox başlangıçta işaretlidir =====
+2026-10-07 18:57:13 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başlatılıyor... (headless: false)
+2026-10-07 18:57:15 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başarıyla başlatıldı.
+2026-10-07 18:57:46 INFO  com.kaya.herokuapp.pages.CheckboxesPage - Checkboxes sayfasına gidildi.
+2026-10-07 18:57:46 INFO  com.kaya.herokuapp.pages.CheckboxesPage - 1. index'teki checkbox durumu: işaretli
+2026-10-07 18:57:46 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo bitti: İkinci checkbox başlangıçta işaretlidir | Durum: PASSED =====
+2026-10-07 18:57:50 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver kapatıldı.
+2026-10-07 18:57:50 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo başlıyor: İlk checkbox işaretlenebilir =====
+2026-10-07 18:57:50 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başlatılıyor... (headless: false)
+2026-10-07 18:57:51 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başarıyla başlatıldı.
+2026-10-07 18:58:22 INFO  com.kaya.herokuapp.pages.CheckboxesPage - Checkboxes sayfasına gidildi.
+2026-10-07 18:58:22 INFO  com.kaya.herokuapp.pages.CheckboxesPage - 0. index'teki checkbox işaretlendi.
+2026-10-07 18:58:22 INFO  com.kaya.herokuapp.pages.CheckboxesPage - 0. index'teki checkbox durumu: işaretli
+2026-10-07 18:58:22 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo bitti: İlk checkbox işaretlenebilir | Durum: PASSED =====
+2026-10-07 18:58:24 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver kapatıldı.
+2026-10-07 18:58:24 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo başlıyor: İkinci checkbox'ın işareti kaldırılabilir =====
+2026-10-07 18:58:24 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başlatılıyor... (headless: false)
+2026-10-07 18:58:26 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başarıyla başlatıldı.
+2026-10-07 18:58:57 INFO  com.kaya.herokuapp.pages.CheckboxesPage - Checkboxes sayfasına gidildi.
+2026-10-07 18:58:57 INFO  com.kaya.herokuapp.pages.CheckboxesPage - 1. index'teki checkbox'ın işareti kaldırıldı.
+2026-10-07 18:58:57 INFO  com.kaya.herokuapp.pages.CheckboxesPage - 1. index'teki checkbox durumu: işaretsiz
+2026-10-07 18:58:57 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo bitti: İkinci checkbox'ın işareti kaldırılabilir | Durum: PASSED =====
+2026-10-07 18:59:00 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver kapatıldı.
+2026-10-07 18:59:00 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo başlıyor: Doğru bilgilerle giriş başarılı =====
+2026-10-07 18:59:00 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başlatılıyor... (headless: false)
+2026-10-07 18:59:01 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başarıyla başlatıldı.
+2026-10-07 18:59:32 INFO  com.kaya.herokuapp.pages.LoginPage - Login sayfasına gidildi.
+2026-10-07 19:00:03 INFO  com.kaya.herokuapp.pages.LoginPage - Flash mesajı okundu: You logged into a secure area!
 ×
-2026-10-06 13:39:46 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo bitti: Hatalı bilgilerle giriş başarısız | Durum: PASSED =====
-2026-10-06 13:39:49 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver kapatıldı.
-2026-10-06 13:39:49 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo başlıyor: Hatalı bilgilerle giriş başarısız =====
-2026-10-06 13:39:49 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başlatılıyor... (headless: false)
-2026-10-06 13:39:51 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başarıyla başlatıldı.
-2026-10-06 13:40:22 INFO  com.kaya.herokuapp.pages.LoginPage - Login sayfasına gidildi.
-2026-10-06 13:40:22 INFO  com.kaya.herokuapp.pages.LoginPage - Flash mesajı okundu: Your password is invalid!
+2026-10-07 19:00:04 INFO  com.kaya.herokuapp.pages.LoginPage - Secure area başlığı: Secure Area
+2026-10-07 19:00:04 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo bitti: Doğru bilgilerle giriş başarılı | Durum: PASSED =====
+2026-10-07 19:00:04 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver kapatıldı.
+2026-10-07 19:00:04 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo başlıyor: Hatalı bilgilerle giriş başarısız =====
+2026-10-07 19:00:04 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başlatılıyor... (headless: false)
+2026-10-07 19:00:05 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başarıyla başlatıldı.
+2026-10-07 19:00:36 INFO  com.kaya.herokuapp.pages.LoginPage - Login sayfasına gidildi.
+2026-10-07 19:01:08 INFO  com.kaya.herokuapp.pages.LoginPage - Flash mesajı okundu: Your username is invalid!
 ×
-2026-10-06 13:40:22 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo bitti: Hatalı bilgilerle giriş başarısız | Durum: PASSED =====
-2026-10-06 13:40:25 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver kapatıldı.
-2026-10-06 13:40:25 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo başlıyor: Başarılı giriş sonrası çıkış yapılabilir =====
-2026-10-06 13:40:25 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başlatılıyor... (headless: false)
-2026-10-06 13:40:27 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başarıyla başlatıldı.
-2026-10-06 13:40:58 INFO  com.kaya.herokuapp.pages.LoginPage - Login sayfasına gidildi.
-2026-10-06 13:40:58 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo bitti: Başarılı giriş sonrası çıkış yapılabilir | Durum: UNDEFINED =====
-2026-10-06 13:41:01 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver kapatıldı.
+2026-10-07 19:01:08 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo bitti: Hatalı bilgilerle giriş başarısız | Durum: PASSED =====
+2026-10-07 19:01:08 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver kapatıldı.
+2026-10-07 19:01:08 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo başlıyor: Hatalı bilgilerle giriş başarısız =====
+2026-10-07 19:01:08 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başlatılıyor... (headless: false)
+2026-10-07 19:01:10 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başarıyla başlatıldı.
+2026-10-07 19:01:41 INFO  com.kaya.herokuapp.pages.LoginPage - Login sayfasına gidildi.
+2026-10-07 19:02:12 INFO  com.kaya.herokuapp.pages.LoginPage - Flash mesajı okundu: Your password is invalid!
+×
+2026-10-07 19:02:12 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo bitti: Hatalı bilgilerle giriş başarısız | Durum: PASSED =====
+2026-10-07 19:02:12 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver kapatıldı.
+2026-10-07 19:02:12 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo başlıyor: Başarılı giriş sonrası çıkış yapılabilir =====
+2026-10-07 19:02:12 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başlatılıyor... (headless: false)
+2026-10-07 19:02:14 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver başarıyla başlatıldı.
+2026-10-07 19:02:45 INFO  com.kaya.herokuapp.pages.LoginPage - Login sayfasına gidildi.
+2026-10-07 19:03:46 INFO  com.kaya.herokuapp.pages.LoginPage - Flash mesajı okundu: You logged out of the secure area!
+×
+2026-10-07 19:03:46 INFO  com.kaya.herokuapp.hooks.Hooks - ===== Senaryo bitti: Başarılı giriş sonrası çıkış yapılabilir | Durum: PASSED =====
+2026-10-07 19:03:47 INFO  com.kaya.herokuapp.base.DriverManager - Chrome driver kapatıldı.

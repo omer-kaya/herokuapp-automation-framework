@@ -41,8 +41,18 @@ public class LoginPage {
     // NAVIGATION
     // ==========================================
     public void goToLoginPage() {
-        driver.get(ConfigReader.getProperty("baseUrl") + "/login");
-        logger.info("Login sayfasına gidildi.");
+        int maxRetries = 2;
+        for (int i = 0; i < maxRetries; i++) {
+            try {
+                driver.get(ConfigReader.getProperty("baseUrl") + "/login");
+                wait.until(ExpectedConditions.visibilityOfElementLocated(usernameField));
+                logger.info("Login sayfasına gidildi.");
+                return;
+            } catch (Exception e) {
+                logger.warn("Login sayfası yüklenemedi, tekrar deneniyor... (deneme {}/{})", i + 1, maxRetries);
+            }
+        }
+        throw new RuntimeException("Login sayfasına " + maxRetries + " denemede de gidilemedi. Site muhtemelen geçici olarak erişilemez durumda.");
     }
 
     // ==========================================
